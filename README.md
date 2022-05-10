@@ -1,9 +1,22 @@
 # README
 
-A simple Chat application built with Ruby on Rails
+A simple Chat application built with Ruby on Rails  
 
-##Endpoints
-##Apps
+## Start the app
+
+- **docker**: docker-compose up
+- **localy**: ``` 
+bundle install
+db:create
+db:migrate
+db:seed
+rails s
+```
+
+## Endpoints  
+
+## Apps  
+
 #### index apps
 ```
 curl --location --request GET 'http://localhost:3000/api/v1/apps/' \
@@ -55,7 +68,8 @@ response:
     "chats_count": 0
 }
 ```
-##Chats
+
+## Chats
 #### index chats by app token
 ```
 curl --location --request GET 'http://localhost:3000/api/v1/apps/NkhTJHQMtuD89k37rVS3kubG/chats/' \
@@ -95,7 +109,7 @@ response:
   "messages_count": 0
 }
 ```
-##Messages
+## Messages
 #### index chats by app token
 ```
 curl --location --request GET 'http://localhost:3000/api/v1/apps/NkhTJHQMtuD89k37rVS3kubG/chats/1/messages' \
