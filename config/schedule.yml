@@ -1,0 +1,5 @@
+update_counters_job:
+  cron: "*/1 * * * *"
+  class: "UpdateCountersJob"
+  queue: counters
+  active_job: true
