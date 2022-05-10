@@ -5,7 +5,8 @@ A simple Chat application built with Ruby on Rails
 ## Start the app
 
 - **docker**: docker-compose up
-- **localy**: ``` 
+- **localy**: 
+```
 bundle install
 db:create
 db:migrate
